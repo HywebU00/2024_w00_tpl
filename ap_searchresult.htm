@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺北市立圖書館 線上參考服務系統</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#aC" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="Site">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <li><a href="#">登出</a></li>
+              <li><a href="#">回首頁</a></li>
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">館藏查詢系統</a></li>
+              <li><a href="#">電子資源整合系統</a></li>
+              <li><a href="#">回臺北市立圖書館首頁</a></li>
+            </ul>
+          </div>
+          <!-- font_size -->
+          <div class="font_size">
+            <span>字型大小：</span>
+            <!-- 英文用<span>font-size：</span> -->
+            <ul>
+              <li><a href="#" role="button" class="small">小</a></li>
+              <li><a href="#" role="button" class="medium active">中</a></li>
+              <li><a href="#" role="button" class="large">大</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/logo.png" alt="臺北市立圖書館 線上參考服務系統" /></a>
+        </h1>
+
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li><a href="#">服務說明</a></li>
+            <li><a href="#">問題瀏覽</a></li>
+            <li><a href="#">我要提問</a></li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="aC" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+      <!-- 查詢服務 start -->
+      <section class="mpimgBlock">
+        <div class="container">
+          <!-- searchBlock -->
+          <div class="searchBlock">
+            <h2 class="mptitle">查詢服務</h2>
+            <div class="tabSet" role="tablist">
+              <!-- 頁籤的上一層父物件要加 role="tablist" -->
+              <div class="tabItems">
+                <button type="button" class="tabBtn">簡易查詢</button>
+                <button type="button" class="tabBtn">進階查詢</button>
+              </div>
+              <div class="tabContentGroup">
+                <div class="tabContent">
+                  <div class="content">
+                    <!-- Search Start -->
+                    <div class="search" role="search">
+                      <div class="form_grp">
+                        <label for="mustSameAsId">搜尋</label>
+                        <div class="formContent">
+                          <input name="username" id="mustSameAsId" type="text" placeholder="請輸入檢索詞" accesskey="S" title="請輸入檢索詞" aria-label="搜尋網站內容" class="searchbox" />
+                        </div>
+                      </div>
+                      <div class="keywordHot">
+                        <ul>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                        </ul>
+                      </div>
+                      <div class="btngrp">
+                        <input name="" type="submit" value="確認送出" class="btn btn-search" />
+                      </div>
+                    </div>
+                    <!-- Search End -->
+                  </div>
+                </div>
+                <div class="tabContent">
+                  <div class="content">
+                    <!-- advSearch Start -->
+                    <div class="search" role="search">
+                      <div class="form_grp">
+                        <label for="mustSameAsId">進階查詢</label>
+                        <div class="formContent">
+                          <!-- query_con_2_2_6_2 -->
+                          <div class="query_con_2_2_6_2">
+                            <div class="col"><span class="keywords_title">關鍵詞檢索</span></div>
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="">日期</option>
+                                <option value="">2024/01/01</option>
+                              </select>
+                            </div>
+                            <div class="col"><input type="text" id="searchidname" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                            <!-- <div class="col">&nbsp;</div> -->
+                          </div>
+                          <!-- query_con_2_2_6_2 end -->
+                          <!-- query_con_2_2_6_2 -->
+                          <div class="query_con_2_2_6_2">
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="">AND</option>
+                                <option value="">OR</option>
+                                <option value="">NOT</option>
+                              </select>
+                            </div>
+
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="all">全部欄位</option>
+                                <option value="titleName">作品名稱</option>
+                                <option value="workType">藏品類型</option>
+                                <option value="originalSurrogate">資料類型</option>
+                                <option value="creatorName">創作者姓名</option>
+                                <option value="dateName">日期</option>
+                                <option value="medium">藏品形式</option>
+                                <option value="form">體裁</option>
+                                <option value="subject">內容主題</option>
+                                <option value="keywords">關鍵詞</option>
+                              </select>
+                            </div>
+                            <div class="col"><input type="text" id="searchidname" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                            <div class="col">
+                              <button type="button" class="btn btn-white btn_boxshadow addbtn" aria-label="增加查詢條件">
+                                <span class="i_add"></span>
+                              </button>
+                              <!-- <button type="button" class="btn btn-primary" aria-label="減少查詢條件">
+                                      <span class="i_minus invert"></span>
+                                    </button> -->
+                            </div>
+                          </div>
+                          <!-- query_con_2_2_6_2 end -->
+                        </div>
+                      </div>
+                      <div class="keywordHot">
+                        <ul>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                        </ul>
+                      </div>
+                      <div class="btngrp">
+                        <input name="" type="submit" value="確認送出" class="btn btn-search" />
+                      </div>
+                    </div>
+                    <!-- advSearch End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- searchBlock end-->
+        </div>
+      </section>
+      <!-- 查詢服務 end -->
+      <div class="container">
+        <!-- 左側 -->
+        <div class="left_block stickySidebar hidden">
+        </div>
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li>查詢結果</li>
+            </ul>
+          </div>
+
+          <!-- h2節點 -->
+          <h2 class="title">查詢結果</h2>
+          <!-- function功能區塊 -->
+          <div class="function">
+            <ul>
+              <li class="icon_back"><a href="#">回上一頁</a></li>
+            </ul>
+          </div>
+          <!-- aP Start -->
+          <section class="ap">
+            <!-- category -->
+            <div class="category">
+              <ul>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">常問問題</a></li>
+                <li><a href="#">館務</a></li>
+                <li><a href="#">知識性</a></li>
+              </ul>
+            </div>
+            <!-- 選擇區塊starat -->
+            <div class="chooseblock">
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="form_inline">
+                    <div class="total">
+                      共<span>308</span>筆資料，第<span>1/18</span>頁，
+                      <div class="items">每頁顯示 <a href="#">10</a> <a href="#">20</a> <a href="#">30</a> 筆資料</div>
+                    </div>
+                    <div class="pagegroup">
+                      <ul class="page">
+                        <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                        <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                        <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                        <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                      </ul>
+                      <div class="topage"><label for="">跳到第</label><select name="" id="" aria-label="每頁顯示">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                        </select>頁 <button type="button" class="btn">確定</button></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pagination end-->
+              <!-- 排序 start-->
+              <div class="arrangement_group">
+                <label for="selectSample">排序</label>
+                <select id="selectSample" name="">
+                  <option value="">熱門度-降冪</option>
+                  <option value="">熱門度-升冪</option>
+                  <option value="">提問時間-降冪</option>
+                  <option value="">提問時間-升冪</option>
+                </select>
+                <input type="button" value="確定" class="btn btn-submit">
+              </div>
+              <!-- 排序 end-->
+            </div>
+            <!-- 選擇區塊end -->
+            <!-- 問題列表 start -->
+            <div class="questionResult_list_group">
+              <!-- 1 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+              </div>
+              <!-- 2 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                </div>
+                <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
+              </div>
+              <!-- 燈箱start -->
+              <div class="lightbox_block" id="dialog-content">
+                <!-- 問題解答 start -->
+                <div class="questionanswer_block">
+                  <!-- 問題 start-->
+                  <div class="problemmessage">
+                    <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                    <div class="question_block">
+                      <p>
+                        1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。<br><br>
+                        2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                        9/26上架之「新書通報」(館藏系統頁面下方紅字)<br><br>
+                        3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝
+                        <br><br>ps.熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 問題 end-->
+                  <!-- 解答 start -->
+                  <div class="answer_content">
+                    <div class="answer_title">解答</div>
+                    <p>親愛的讀者您好：<br>
+                      抱歉誤解您的提問，日前上架之紅字「新書通報」資訊就等於之前系統的「新到圖書」資訊。<br>
+                      熱門問答內關於「查找新到圖書」內已更新說明可利用館藏查詢頁面下方的新書通報的列表，點入後可利用左方條件限縮查詢條件新書。謝謝。連結請<a href="#">按此</a>。<br><br>
+                      臺北市立圖書館諮詢服務課敬復
+                    </p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="source">資料來源：維基百科：https://en.wikipedia.org/wiki/Printer%27s_key (檢索日期：113.3.23)</div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                  <!-- 解答 end -->
+                </div>
+                <!-- 問題解答 end -->
+              </div>
+              <!-- 燈箱end -->
+              <!-- 3 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 4 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 5 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 6 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 7 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 8 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 9 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!-- 10 -->
+              <div class="questionResult_list">
+                <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                <div class="question_block">1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                  9/26上架之「新書通報」(館藏系統頁面下方紅字)3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
+                  熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
+                <div class="more"><a href="javascript:;">閱讀全文</a></div>
+              </div>
+              <!--  -->
+            </div>
+            <!-- 問題列表 start -->
+            <!-- Pagination start-->
+            <div class="pagination">
+              <form action="">
+                <div class="form_inline">
+                  <div class="total">
+                    共<span>308</span>筆資料，第<span>1/18</span>頁，
+                    <div class="items">每頁顯示 <a href="#">10</a> <a href="#">20</a> <a href="#">30</a> 筆資料</div>
+                  </div>
+                  <div class="pagegroup">
+                    <ul class="page">
+                      <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                      <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                      <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                      <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                    </ul>
+                    <div class="topage"><label for="">跳到第</label><select name="" id="" aria-label="每頁顯示">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                      </select>頁 <button type="button" class="btn">確定</button></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Pagination end-->
+          </section>
+          <!-- aP End -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_info">
+          <div class="connection_block">
+            <p>
+              本所服務專線：(02)2660-7600<br />
+              總館地址：10659 臺北市建國南路二段125號<br />
+              本網站最佳瀏覽解析度為 1280*800 以上<br />
+            </p>
+          </div>
+          <ul class="footer_link">
+            <li><a href="javascript:;">服務說明</a></li>
+            <li><a href="javascript:;">問題瀏覽</a></li>
+            <li><a href="javascript:;">我要提問</a></li>
+          </ul>
+          <div class="update_block">
+            <sapn class="Copyright">臺北市立圖書館版權所有 Copyright 2024© TPML</sapn>
+            <span class="counter">瀏覽人次／<em>46476653</em></span>
+            <span class="update">系統最後更新日期／<em>2018/01/01</em></span>
+
+          </div>
+
+        </div>
+        <div class="footer_icon">
+          <a target="_blank" href="javascript:;">
+            <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+          </a>
+          <!-- <a target="_blank" href="javascript:;">
+                <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+              </a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- lazyload -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- scrolltable -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- fancybox -->
+  <script src="vendor/fancybox/fancybox.umd.js"></script>
+  <script src="vendor/fancybox/l10n/zh_TW.umd.js"></script>
+  <!-- hyUI -->
+  <script src="js/main.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>

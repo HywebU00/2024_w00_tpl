@@ -1,0 +1,130 @@
+footer {
+  box-sizing: border-box;
+  @include clearfix;
+  text-align: left;
+  font-size: 1em;
+  padding: 0;
+  color: $color-dark;
+  .container {
+    @include gutter;
+    background: rgb(110, 204, 247);
+    background: linear-gradient(0deg, rgba(110, 204, 247, 1) 0%, rgba(173, 223, 244, 1) 100%);
+    padding: 3em 60px 30px;
+    > div {
+      padding-bottom: 1em;
+    }
+    display: flex;
+    @include screen('tablet') {
+      flex-wrap: wrap;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    &:hover,
+    &:focus {
+      color: darken($primaryColor, 10);
+    }
+  }
+  .footer_logo {
+    flex: 0 1 240px;
+  }
+  .footer_info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .connection_block {
+      flex: 0 0 auto;
+      flex-basis: 45%;
+    }
+    .footer_link {
+      flex: 1 1 auto;
+    }
+    .update_block {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+    }
+    @media (max-width: 850px) {
+      .connection_block,
+      .footer_link {
+        flex: 1 1 auto;
+        flex-basis: 100%;
+      }
+      .footer_link {
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .footer_icon {
+    flex: 0 1 200px;
+    @include screen('tablet') {
+      flex: 1 1 100%;
+      text-align: right;
+    }
+  }
+  // 版權連結
+  .footer_link {
+    @include li-reset();
+    @include clearfix();
+    display: flex;
+    @include screen('mobile') {
+      flex-direction: column;
+    }
+    li {
+      flex: 0 1 auto;
+      margin: 0px 5px 5px 0px;
+      @include screen('mobile') {
+        flex: 1 1 100%;
+      }
+      a {
+        display: block;
+        padding: 0.4em 1.5em;
+        background: $primaryColor;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        transition: all 0.3s ease-out;
+        &:hover,
+        &:focus {
+          background: darken($primaryColor, 10);
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.65em;
+  }
+  .update,
+  .counter {
+    display: inline-block;
+    margin-right: 5px;
+    em {
+      font-style: normal;
+      color: $primaryColor;
+      padding: 0 0.5em;
+    }
+  }
+  .footer_icon {
+    a {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      &:focus {
+        &:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-shadow: 0px 0px 0px 1px $aHover inset;
+          z-index: 99;
+        }
+      }
+    }
+    img {
+      max-width: 120px;
+    }
+  }
+}

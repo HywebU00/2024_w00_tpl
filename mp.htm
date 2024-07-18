@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺北市立圖書館 線上參考服務系統</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#aC" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="Site">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <li><a href="#">登出</a></li>
+              <li><a href="#">回首頁</a></li>
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">館藏查詢系統</a></li>
+              <li><a href="#">電子資源整合系統</a></li>
+              <li><a href="#">回臺北市立圖書館首頁</a></li>
+            </ul>
+          </div>
+          <!-- font_size -->
+          <div class="font_size">
+            <span>字型大小：</span>
+            <!-- 英文用<span>font-size：</span> -->
+            <ul>
+              <li><a href="#" role="button" class="small">小</a></li>
+              <li><a href="#" role="button" class="medium active">中</a></li>
+              <li><a href="#" role="button" class="large">大</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/logo.png" alt="臺北市立圖書館 線上參考服務系統" /></a>
+        </h1>
+
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li><a href="#">服務說明</a></li>
+            <li><a href="#">問題瀏覽</a></li>
+            <li><a href="#">我要提問</a></li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="aC" class="main">
+      <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+      <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
+      <!-- //// class 都可以隨意命名 !!! ///// -->
+      <!-- 查詢服務 start -->
+      <section class="mpimgBlock">
+        <div class="container">
+          <!-- searchBlock -->
+          <div class="searchBlock">
+            <h2 class="mptitle">查詢服務</h2>
+            <div class="tabSet" role="tablist">
+              <!-- 頁籤的上一層父物件要加 role="tablist" -->
+              <div class="tabItems">
+                <button type="button" class="tabBtn">簡易查詢</button>
+                <button type="button" class="tabBtn">進階查詢</button>
+              </div>
+              <div class="tabContentGroup">
+                <div class="tabContent">
+                  <div class="content">
+                    <!-- Search Start -->
+                    <div class="search" role="search">
+                      <div class="form_grp">
+                        <label for="mustSameAsId">搜尋</label>
+                        <div class="formContent">
+                          <input name="username" id="mustSameAsId" type="text" placeholder="請輸入檢索詞" accesskey="S" title="請輸入檢索詞" aria-label="搜尋網站內容" class="searchbox" />
+                        </div>
+                      </div>
+                      <div class="keywordHot">
+                        <ul>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                        </ul>
+                      </div>
+                      <div class="btngrp">
+                        <input name="" type="submit" value="確認送出" class="btn btn-search" />
+                      </div>
+                    </div>
+                    <!-- Search End -->
+                  </div>
+                </div>
+                <div class="tabContent">
+                  <div class="content">
+                    <!-- advSearch Start -->
+                    <div class="search" role="search">
+                      <div class="form_grp">
+                        <label for="mustSameAsId">進階查詢</label>
+                        <div class="formContent">
+                          <!-- query_con_2_2_6_2 -->
+                          <div class="query_con_2_2_6_2">
+                            <div class="col"><span class="keywords_title">關鍵詞檢索</span></div>
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="">日期</option>
+                                <option value="">2024/01/01</option>
+                              </select>
+                            </div>
+                            <div class="col"><input type="text" id="searchidname" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                            <!-- <div class="col">&nbsp;</div> -->
+                          </div>
+                          <!-- query_con_2_2_6_2 end -->
+                          <!-- query_con_2_2_6_2 -->
+                          <div class="query_con_2_2_6_2">
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="">AND</option>
+                                <option value="">OR</option>
+                                <option value="">NOT</option>
+                              </select>
+                            </div>
+
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="all">全部欄位</option>
+                                <option value="titleName">作品名稱</option>
+                                <option value="workType">藏品類型</option>
+                                <option value="originalSurrogate">資料類型</option>
+                                <option value="creatorName">創作者姓名</option>
+                                <option value="dateName">日期</option>
+                                <option value="medium">藏品形式</option>
+                                <option value="form">體裁</option>
+                                <option value="subject">內容主題</option>
+                                <option value="keywords">關鍵詞</option>
+                              </select>
+                            </div>
+                            <div class="col"><input type="text" id="searchidname" name="name" placeholder="請輸入查詢詞" value="請輸入查詢詞" /></div>
+                            <div class="col">
+                              <button type="button" class="btn btn-white btn_boxshadow addbtn" aria-label="增加查詢條件">
+                                <span class="i_add"></span>
+                              </button>
+                              <!-- <button type="button" class="btn btn-primary" aria-label="減少查詢條件">
+                                <span class="i_minus invert"></span>
+                              </button> -->
+                            </div>
+                          </div>
+                          <!-- query_con_2_2_6_2 end -->
+                        </div>
+                      </div>
+                      <div class="keywordHot">
+                        <ul>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                          <li><a href="#">借書</a></li>
+                          <li><a href="#">館藏</a></li>
+                          <li><a href="#">借閱證</a></li>
+                        </ul>
+                      </div>
+                      <div class="btngrp">
+                        <input name="" type="submit" value="確認送出" class="btn btn-search" />
+                      </div>
+                    </div>
+                    <!-- advSearch End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- searchBlock end-->
+        </div>
+      </section>
+      <!-- 查詢服務 end -->
+      <!-- 問題選粹 start -->
+      <section class="questionSelection_block col-12">
+        <div class="container">
+          <div class="col">
+            <h2 class="mptitle">問題選粹</h2>
+            <div class="question_selection_group">
+              <!-- 1 -->
+              <div class="question_list">
+                <a href="javascript:;">
+                  <div class="images"><img src="images/question_list_img01.jpg" alt="">
+                    <div class="content">
+                      <div class="title">常問問題</div>
+                      <div class="more">查看更多</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 2 -->
+              <div class="question_list">
+                <a href="javascript:;">
+                  <div class="images"><img src="images/question_list_img02.jpg" alt="">
+                    <div class="content">
+                      <div class="title">館務</div>
+                      <div class="more">查看更多</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 3 -->
+              <div class="question_list">
+                <a href="javascript:;">
+                  <div class="images"><img src="images/question_list_img03.jpg" alt="">
+                    <div class="content">
+                      <div class="title">知識性</div>
+                      <div class="more">查看更多</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 問題選粹 end -->
+      <!-- 熱門問題 start -->
+      <section class="topQuestions_block col-12">
+        <div class="container">
+          <div class="col">
+            <div class="topQuestions_group">
+              <h2 class="mptitle">十大熱門問題</h2>
+              <div class="questions_block">
+                <!-- 1 -->
+                <div class="question_list">
+                  <button type="button" class="question_title active">預約取書期限是多久？</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">兒童室的開放時間為何?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">如何進行線上辦證？</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">請問臺北市圖書館是否提供學生參加公共服務的機會？請問國中生可不可以參加服務 ？</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">期刊（雜誌）可以外借嗎?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!--6 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">圖書館借閱證有分哪幾類?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。
+                    </p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">閱覽服務問題目錄</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">請問什麼是過期期刊販售?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。
+                    </p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">可否代為向他館借書?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div class="question_list">
+                  <button type="button" class="question_title">館際合作的申請費用如何計算?</button>
+                  <div class="answer_content">
+                    <p>您可於本館「館藏查詢系統」輸入證號、密碼及驗證碼，登入「個人書房」，點選「我的預約」，即可查詢預約書的排序順位或調出時間，當預約書運送到取書館後保留5天取書時間，且國定假日與休館日不列入計算。
+                      連結請<a href="#">按此</a>。</p>
+                    <div class="file_download">
+                      <h3>檔案下載</h3>
+                      <ul>
+                        <li>
+                          <span class="file_name">檔案名稱</span>
+                          <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="solved_or_not">
+                      <span>有回答到您的問題嗎？</span>
+                      <ul>
+                        <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                        <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                      </ul>
+                      <div class="add1">+1</div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 熱門問題 end -->
+    </div>
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_info">
+          <div class="connection_block">
+            <p>
+              本所服務專線：(02)2660-7600<br />
+              總館地址：10659 臺北市建國南路二段125號<br />
+              本網站最佳瀏覽解析度為 1280*800 以上<br />
+            </p>
+          </div>
+          <ul class="footer_link">
+            <li><a href="javascript:;">服務說明</a></li>
+            <li><a href="javascript:;">問題瀏覽</a></li>
+            <li><a href="javascript:;">我要提問</a></li>
+          </ul>
+          <div class="update_block">
+            <sapn class="Copyright">臺北市立圖書館版權所有 Copyright 2024© TPML</sapn>
+            <span class="counter">瀏覽人次／<em>46476653</em></span>
+            <span class="update">系統最後更新日期／<em>2018/01/01</em></span>
+
+          </div>
+
+        </div>
+        <div class="footer_icon">
+          <a target="_blank" href="javascript:;">
+            <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+          </a>
+          <!-- <a target="_blank" href="javascript:;">
+            <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+          </a> -->
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- wrapper Start -->
+  <div id="chat_wrapper" class="">
+    <div class="inner_wrap">
+      <!-- header -->
+      <div class="chat_header">
+        <div class="title">
+          <div class="logo"><img src="images/icon_header_service.svg" alt="" /></div>
+          <b>凌網科技智能客服<span>說明</span></b>
+        </div>
+        <div class="btn_grp">
+          <a href="#" class="btn btn_service_switch" id="btn_1" alt="開關"><img src="images/icon_header_functions.svg" alt="" class="svg" /></a>
+          <a href="#" class="btn btn_service_switch" alt="刪除"><img src="images/icon_header_minus.svg" alt="" class="svg" /></a>
+          <a href="#" class="btn btn_service_switch mobileonly" id="btn_4" alt="手機版關閉視窗"><img src="images/icon_close.svg" alt="" class="svg" /></a>
+        </div>
+        <!-- 服務列表 style="display: none;" -->
+        <div class="service_list" style="display: none">
+          <a href="#"><img src="images/icon_smile.svg" alt="" /><span>服務名稱一</span></a>
+          <a href="#"><img src="images/icon_smile.svg" alt="" /><span>服務名稱二</span></a>
+          <a href="#"><img src="images/icon_smile.svg" alt="" /><span>服務名稱三</span></a>
+        </div>
+      </div>
+      <!-- 內容 -->
+      <div class="chat_content">
+        <!-- 懸浮狀態 -->
+        <div class="system_status">
+          <!-- 系統忙碌中，請稍後再試。 -->
+          <!-- 網路連線異常，請確認網路連線狀態。 -->
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aliquam vel iusto laboriosam expedita. Ab fuga aperiam inventore, modi doloremque molestiae consequatur ex quibusdam,
+          nostrum, expedita asperiores accusamus dolores exercitationem.
+        </div>
+        <div class="chat_content_inner">
+          <!-- 左：客服 -->
+          <div class="message_received">
+            <!-- 客服icon -->
+            <div class="service_icon"><img src="images/icon_header_service.svg" alt="" /></div>
+            <!-- 客服訊息內容 -->
+            <div class="service_wrap">
+              <div class="service_message">Hi～我是凌網科技智能客服，很高興為您服務 😊 需要什麼協助呢？</div>
+            </div>
+            <!-- 訊息發送時間 -->
+            <div class="received_time">09:10:36</div>
+          </div>
+          <!-- 右：user -->
+          <div class="message_user">
+            <!-- 訊息內容 -->
+            <div class="user_wrap">
+              <div class="user_message">使用者輸入文字內容</div>
+              <div class="user_message">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</div>
+            </div>
+            <!-- 訊息發送時間 -->
+            <div class="received_time">09:11:36</div>
+          </div>
+          <!-- 左：客服 -->
+          <div class="message_received">
+            <!-- 客服icon -->
+            <div class="service_icon"><img src="images/icon_header_service.svg" alt="" /></div>
+            <!-- 客服訊息內容 -->
+            <div class="service_wrap">
+              <div class="service_message">
+                <h3 class="title">標題</h3>
+                <p>純文字敘述</p>
+                <a href="#">項目連結 1</a>
+                <a href="#">項目連結 2</a>
+                <a href="#">項目連結 3</a>
+              </div>
+              <div class="service_message">
+                <h3 class="title_pic">標題</h3>
+                <p>純文字敘述</p>
+                <a href="#">項目連結 1</a>
+                <a href="#">項目連結 2</a>
+                <a href="#">項目連結 3</a>
+              </div>
+              <div class="service_flow">
+                <!-- 水平 scroll -->
+                <div class="flow_wrap">
+                  <div class="service_message thumbnail">
+                    <a href="#">
+                      <div class="img-container">
+                        <img src="images/img_book.png" alt="" class="contain" />
+                      </div>
+                      <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    </a>
+                  </div>
+                  <div class="service_message thumbnail">
+                    <a href="#">
+                      <div class="img-container">
+                        <img src="images/img_book.png" alt="" class="contain" />
+                      </div>
+                      <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    </a>
+                  </div>
+                  <!-- 客服訊息內容 -->
+                  <div class="service_message">
+                    <h3 class="title">標題1</h3>
+                    <p class="">項目文字</p>
+                    <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    <a href="#">項目連結 1</a>
+                    <a href="#">項目連結 2</a>
+                    <a href="#">項目連結 3</a>
+                  </div>
+                  <!-- 客服訊息內容 -->
+                  <div class="service_message">
+                    <h3 class="title">標題2</h3>
+                    <p class="t_center">項目文字置中</p>
+                    <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    <a class="t_center" href="#">項目連結 1</a>
+                    <a class="t_center" href="#">項目連結 2</a>
+                    <a class="t_center" href="#">項目連結 3</a>
+                  </div>
+                  <!-- 客服訊息內容 -->
+                  <div class="service_message">
+                    <h3 class="title_pic">標題3</h3>
+                    <p class="">項目文字</p>
+                    <p class="">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    <a href="#">項目連結 1</a>
+                    <a href="#">項目連結 2</a>
+                    <a href="#">項目連結 3</a>
+                  </div>
+                  <!-- 客服訊息內容 -->
+                  <div class="service_message">
+                    <h3 class="title_pic">標題4</h3>
+                    <p class="t_center">項目文字置中</p>
+                    <p class="t_center">致富信念: 重建理財思維, 及早執行靠利息輕鬆生活</p>
+                    <a class="t_center" href="#">項目連結 1</a>
+                    <a class="t_center" href="#">項目連結 2</a>
+                    <a class="t_center" href="#">項目連結 3</a>
+                  </div>
+                </div>
+                <!-- btn -->
+                <a href="#" class="btn_prev"><img src="images/icon_arrow_left.svg" alt="前ㄧ項" class="svg" /></a>
+                <a href="#" class="btn_next"><img src="images/icon_arrow_right.svg" alt="下一項" class="svg" /></a>
+              </div>
+              <div class="service_message">客服回應</div>
+              <div class="service_message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <!-- 回饋 -->
+            <div class="feedback">
+              <b>有幫助？</b>
+              <a href="#" class="btn act"><img src="images/icon_smile.svg" alt="" class="svg" />是</a>
+              <a href="#" class="btn"><img src="images/icon_sad.svg" alt="" class="svg" />否</a>
+            </div>
+            <div class="feedback">
+              <b>有幫助？</b>
+              <a href="#" class="btn disable"><img src="images/icon_smile.svg" alt="" class="svg" />是</a>
+              <a href="#" class="btn disable"><img src="images/icon_sad.svg" alt="" class="svg" />否</a>
+            </div>
+            <!-- 訊息發送時間 -->
+            <div class="received_time">09:10:36</div>
+          </div>
+          <!-- 左：客服 -->
+          <div class="message_received">
+            <!-- 客服icon -->
+            <div class="service_icon"><img src="images/icon_header_service.svg" alt="" /></div>
+            <!-- 客服訊息內容 -->
+            <div class="service_wrap">
+              <div class="service_message">客服訊息 1</div>
+              <div class="service_message">客服訊息 2</div>
+              <div class="service_message">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</div>
+            </div>
+            <!-- 訊息發送時間 -->
+            <div class="received_time">09:10:36</div>
+          </div>
+        </div>
+      </div>
+      <!-- 輸入 -->
+      <div class="chat_message_bar">
+        <a href="#" class="btn" alt="功能開關" id="btn_2"><img src="images/icon_function.svg" alt="" class="svg" /></a>
+        <!-- textarea -->
+        <div class="chat_textarea_wrap">
+          <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息"></textarea>
+          <a href="#" class="btn btn_sent" alt="送出訊息"><img src="images/icon_sent2.svg" alt="" class="svg" /></a>
+        </div>
+        <a href="#" class="btn" alt="聽寫輸入"><img src="images/icon_microphone.svg" alt="" class="svg" /></a>
+        <a href="#" class="btn" alt="語音播放" id="btn_3"><img src="images/icon_sound.svg" alt="" class="svg" /></a>
+
+        <!-- 功能開關 style="display: none;" -->
+        <div class="function_bottom" id="item_2" style="display: none">
+          <div class="function_innerwrap">
+            <a href="#" class="act" id="item_3"><span><img src="images/icon_function_1.svg" alt="" class="svg" /></span><b>閱讀喜好</b></a>
+            <a href="#"><span><img src="images/icon_function_2.svg" alt="" /></span><b>服務項目2</b></a>
+            <a href="#"><span><img src="images/icon_function_3.svg" alt="" /></span><b>服務項目3</b></a>
+            <a href="#"><span><img src="images/icon_function_2.svg" alt="" /></span><b>服務項目4</b></a>
+            <a href="#"><span><img src="images/icon_function_3.svg" alt="" /></span><b>服務項目5</b></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 燈箱 -->
+      <div id="modal">
+        <!-- 閱讀喜好（sticky = 燈箱效果） style="display: none;" -->
+        <div class="function_bottom sticky" id="item_4" style="display: none">
+          <a href="#" class="btn_close" alt="開關"><img src="images/icon_close.svg" alt="關閉" /></a>
+          <div class="stuff_title">功能標題</div>
+          <p>功能敘述</p>
+          <div class="slider_wrap">
+            <div class="pagination">
+              <b>書籍<span>1</span></b>/14
+            </div>
+            <div class="slider_item">
+              <div class="foto">
+                <div class="img-container">
+                  <img src="images/img_book.png" alt="" class="contain" />
+                </div>
+                <p>項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文字項目文...</p>
+                <div class="btn_grp btn_inline">
+                  <a href="#" class="btn_normal like"><img src="images/icon_add.svg" alt="" class="svg" />喜歡</a>
+                  <a href="#" class="btn_normal like act"><img src="images/icon_love.svg" alt="" class="svg" />喜歡</a>
+                  <a href="#" class="btn_normal">完成</a>
+                  <a href="#" class="btn_normal disable">完成</a>
+                </div>
+              </div>
+            </div>
+            <!-- btn -->
+            <a href="#" class="btn_prev"><img src="images/icon_arrow_left.svg" alt="前ㄧ項" /></a>
+            <a href="#" class="btn_next"><img src="images/icon_arrow_right.svg" alt="下一項" /></a>
+          </div>
+        </div>
+
+        <!-- 服務滿意度（sticky = 燈箱效果） display: none; -->
+        <div class="function_bottom sticky" style="">
+          <a href="#" class="btn_close" alt="開關"><img src="images/icon_close.svg" alt="" class="svg" /></a>
+          <div class="stuff_title">服務滿意度</div>
+          <p>功能敘述</p>
+          <div class="function_innerwrap sensitivity">
+            <a href="#" class="act"><span><img src="images/icon_smile2.svg" alt="" class="svg" /></span><b>滿意</b></a>
+            <a href="#"><span><img src="images/icon_sad2.svg" alt="" class="svg" /></span><b>不滿意</b></a>
+            <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息"></textarea>
+          </div>
+          <div class="btn_grp btn_inline">
+            <a href="#" class="btn_normal sent">送出</a>
+            <a href="#" class="btn_normal disable">送出</a>
+          </div>
+        </div>
+
+        <!-- 服務滿意度送出（sticky = 燈箱效果） -->
+        <div class="function_bottom sticky" id="item_5" style="display: none">
+          <!-- <a href="#" class="btn_close" alt="開關"><img src="images/icon_close.svg" alt="" class="svg"></a>
+                    <div class="stuff_title">服務滿意度</div>
+                    <p>功能敘述</p> -->
+          <div class="function_innerwrap sensitivity">
+            <!-- <a href="#" class="act"><span><img src="images/icon_smile2.svg" alt="" class="svg"></span><b>滿意</b></a>
+                        <a href="#"><span><img src="images/icon_sad2.svg" alt="" class="svg"></span><b>不滿意</b></a>
+                        <textarea name="" id="" class="chat_textarea" placeholder="請輸入訊息">很有幫助</textarea> -->
+            <p>謝謝您的回饋，期待將來能給您更好的服務 😊</p>
+            <b>系統將於 60 秒後結束對話。</b>
+          </div>
+          <div class="btn_grp btn_inline">
+            <a href="#" class="btn_normal close" class="btn_close">結束對話</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- img超橢  -->
+  <!-- <a href="#" id="chat_switch" class="">客服</a> -->
+
+  <!-- CSS超橢 -->
+  <div id="chat_switch" class="container2">
+    <div class="superellipse">客服</div>
+  </div>
+  <!-- JQ -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- lazyload -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- scrolltable -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- fancybox -->
+  <script src="vendor/fancybox/fancybox.umd.js"></script>
+  <script src="vendor/fancybox/l10n/zh_TW.umd.js"></script>
+  <!-- hyUI -->
+  <script src="js/main.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+  <script type="text/javascript">
+    // 動態sample
+    $(function () {
+      //
+      $('#chat_switch').click(function (event) {
+        $('#chat_wrapper').slideToggle();
+
+        if ($('#chat_switch').hasClass('act')) {
+          $(this).removeClass('act');
+          // $('#chat_wrapper').removeClass('show');
+        } else {
+          $(this).addClass('act');
+          $('#chat_wrapper').addClass('show');
+          // $('#chat_wrapper').slideUp();
+        }
+      });
+
+      // 右上 header
+      $('#btn_1').click(function (event) {
+        $('.service_list').slideToggle();
+      });
+
+      // function_bottom
+      $('#btn_2').click(function (event) {
+        $('#item_2').slideToggle();
+      });
+      $('#btn_3').click(function (event) {
+        $('.system_status').fadeIn();
+      });
+      $('#btn_4').click(function (event) {
+        $('#chat_wrapper').slideUp();
+        $('#chat_wrapper').removeClass('show');
+        $('#chat_switch').removeClass('act');
+      });
+
+      //
+      $('#item_3').click(function (event) {
+        $('#modal').fadeIn();
+        $('#item_4').slideDown();
+      });
+
+      //
+      $('.btn_close').click(function (event) {
+        $('.function_bottom').slideUp();
+        $('#modal').fadeOut();
+        $('.chat_message_bar').find('a.btn').removeClass('act');
+      });
+
+      $('.close').click(function (event) {
+        $('.function_bottom').slideUp();
+        $('#modal').fadeOut();
+      });
+
+      $('.sent').click(function () {
+        ㄒ;
+        $(this).parents('.function_bottom').slideUp();
+        $('#item_5').show();
+      });
+
+      //
+      $('.sensitivity')
+        .find('a')
+        .click(function (event) {
+          $('.sensitivity').find('a').removeClass('act');
+          $(this).addClass('act');
+        });
+      $('.feedback')
+        .find('a')
+        .click(function (event) {
+          $('.feedback').find('a').removeClass('act');
+          $(this).addClass('act');
+        });
+      // .btn
+      $('.chat_message_bar')
+        .find('a.btn')
+        .click(function (event) {
+          $('.chat_message_bar').find('a.btn').removeClass('act');
+          $(this).addClass('act');
+        });
+
+      // 點空白處關閉
+      // $(document).click(function(event){
+      //     var _con = $('.chat_message_bar');   // 設定目標區域
+      //     if(!_con.is(event.target) && _con.has(event.target).length === 0){
+      //         $('.chat_message_bar').find('a.btn').removeClass('act');
+      //         $('.function_bottom').slideUp('slow');
+      //         $('#modal').fadeOut(400);
+      //     }
+      // });
+    });
+  </script>
+</body>
+
+</html>

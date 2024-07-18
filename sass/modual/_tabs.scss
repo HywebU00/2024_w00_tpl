@@ -1,0 +1,96 @@
+// .tabSet {
+.tabSet {
+  margin: 30px auto;
+  .tabItems {
+    display: flex;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2em;
+  }
+
+  .modeBBtn,
+  .tabBtn {
+    flex: 1 1 auto;
+    font-size: 1.25em;
+    height: 2.5em;
+    text-align: center;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2em;
+
+    // &:focus-visible {
+    //   outline: none;
+    //   box-shadow: 0 0px 0px 2px $aFocus inset;
+    // }
+
+    &.active {
+      cursor: default;
+      background: $primaryColor;
+      color: #fff;
+    }
+  }
+
+  .tabContent {
+    display: none;
+    position: relative;
+    padding: 10px 1px;
+    // border: #bbb 1px solid;
+
+    @include screen('mobile') {
+      padding: 0;
+      margin-bottom: 10px;
+      border: none;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    a:focus {
+      outline: none;
+      box-shadow: 0 0px 0px 2px $aFocus inset;
+
+      @include screen('mobile') {
+        box-shadow: none;
+      }
+    }
+
+    .content {
+      ul {
+        margin: 0;
+      }
+    }
+  }
+
+  .modeBBtn {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+
+  &.modeB {
+    .tabItems {
+      display: none;
+    }
+
+    .tabContent {
+      display: block;
+
+      .content {
+        display: none;
+
+        a:focus-visible {
+          outline: $aFocus 2px solid;
+        }
+      }
+    }
+
+    .modeBBtn {
+      display: block;
+    }
+  }
+}

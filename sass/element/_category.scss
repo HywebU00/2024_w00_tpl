@@ -1,0 +1,49 @@
+.category {
+  @extend %clearfix;
+  text-align: left;
+  margin: 0 auto 1em;
+  @include screen('mobile') {
+    margin: 1em auto 1em;
+  }
+  ul {
+    @include li-reset;
+    li {
+      margin: 0px 3px 3px 0px;
+      display: block;
+      float: left;
+      font-size: 1.125em;
+    }
+  }
+  a {
+    background-color: $primaryColor;
+    padding: 0.6em 1.5em;
+    display: block;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $color-orange;
+
+      box-shadow: none;
+    }
+    &.active {
+      color: #fff;
+      background: $color-orange;
+    }
+    span {
+      font-size: 1em;
+      &:before {
+        content: '(';
+        display: inline-block;
+      }
+      &:after {
+        content: ')';
+        display: inline-block;
+      }
+    }
+  }
+}

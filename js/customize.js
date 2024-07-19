@@ -264,7 +264,7 @@ $(function () {
   //  聊天機器人
   $('.information_slider').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     // fade: true,
     cssEase: 'linear',

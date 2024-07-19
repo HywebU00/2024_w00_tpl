@@ -11346,21 +11346,21 @@ h2.title:before {
   background: rgb(21, 56, 110);
   background: linear-gradient(90deg, rgb(21, 56, 110) 0%, rgb(32, 78, 149) 100%);
   color: #fff;
-  padding: 2em 2em 2em 5.5em;
+  padding: 0.5em 2em 0.5em 1em;
   margin-bottom: 0;
   border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
-.chat_block .chat_group .chat_head:before {
-  content: "";
-  background-image: url("../images/icon_service_man.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 60px;
+.chat_block .chat_group .chat_head .chat_pic {
+  flex: 0 0 auto;
+  flex-basis: 60px;
+  margin-right: 1em;
+}
+.chat_block .chat_group .chat_head .chat_pic img {
   width: 60px;
   height: 60px;
-  position: absolute;
-  left: 1em;
-  top: 0.7em;
 }
 .chat_block .chat_group .chat_head .close_btn {
   position: absolute;
@@ -11396,11 +11396,12 @@ h2.title:before {
   font-size: 1.375em;
   letter-spacing: 0.05em;
   font-weight: bold;
-  padding-right: 60px;
+  padding-right: 40px;
+  line-height: 1.4em;
 }
 .chat_block .chat_group .chat_content {
   width: 100%;
-  height: 77%;
+  height: calc(100% - 80px - 60px);
   border-bottom: 1px solid #eee;
   overflow-y: scroll;
   padding: 1em;
@@ -11564,6 +11565,21 @@ h2.title:before {
   right: -80px;
   background: url("../images/slick/icon_arrow_right_inverse_white.svg") center center no-repeat RGBA(92, 92, 92, 1);
 }
+@media (max-width: 450px) {
+  .chat_block .chat_group .chat_content .information_slider {
+    width: 180px;
+  }
+  .chat_block .chat_group .chat_content .information_slider .informationslist .pic {
+    width: 180px;
+    height: 110px;
+  }
+  .chat_block .chat_group .chat_content .information_slider .slick-prev {
+    left: -30px;
+  }
+  .chat_block .chat_group .chat_content .information_slider .slick-next {
+    right: -30px;
+  }
+}
 .chat_block .chat_group .chat_content .options_btnblock {
   margin: 5px 0 0;
 }
@@ -11604,11 +11620,13 @@ h2.title:before {
 .chat_block .chat_group .message {
   display: flex;
   margin: 0.5em 1em;
+  height: 60px;
 }
 .chat_block .chat_group .message input,
 .chat_block .chat_group .message button {
   border-radius: 0;
   margin: 0;
+  height: 40px;
 }
 .chat_block .chat_group .message input {
   border-color: #fff;
@@ -11627,6 +11645,7 @@ h2.title:before {
   width: 50px;
   background-color: #fff;
   border: 1px solid #fff;
+  margin-left: 5px;
 }
 
 .main.large_size .questionSelection_block .question_selection_group .question_list a .images .content .title {

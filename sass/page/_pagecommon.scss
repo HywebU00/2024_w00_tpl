@@ -689,20 +689,20 @@
       background: rgb(21, 56, 110);
       background: linear-gradient(90deg, rgba(21, 56, 110, 1) 0%, rgba(32, 78, 149, 1) 100%);
       color: #fff;
-      padding: 2em 2em 2em 5.5em;
+      padding: 0.5em 2em 0.5em 1em;
       margin-bottom: 0;
       border-radius: 10px 10px 0 0;
-      &:before {
-        content: '';
-        background-image: url('../images/icon_service_man.svg');
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-size: 60px;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        left: 1em;
-        top: 0.7em;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      .chat_pic {
+        flex: 0 0 auto;
+        flex-basis: 60px;
+        margin-right: 1em;
+        img {
+          width: 60px;
+          height: 60px;
+        }
       }
       .close_btn {
         position: absolute;
@@ -740,17 +740,19 @@
         font-size: 1.375em;
         letter-spacing: 0.05em;
         font-weight: bold;
-        padding-right: 60px;
+        padding-right: 40px;
+        line-height: 1.4em;
       }
     }
 
     .chat_content {
       // flex: 1 1 auto;
       width: 100%;
-      height: 77%;
+      height: calc(100% - 80px - 60px);
       border-bottom: 1px solid #eee;
       overflow-y: scroll;
       padding: 1em;
+
       .chat_frame {
         // display: flex;
         // flex-wrap: wrap;
@@ -773,6 +775,7 @@
         padding-left: 4em;
         position: relative;
         text-align: left;
+
         &:before {
           content: '';
           background-image: url('../images/icon_service_man.svg');
@@ -857,9 +860,11 @@
         width: 210px;
         margin: 0;
         padding: 0;
+
         .informationslist {
           display: block;
           overflow: hidden;
+
           .pic {
             width: 210px;
             height: 130px;
@@ -912,6 +917,21 @@
           right: -80px;
           background: url('../images/slick/icon_arrow_right_inverse_white.svg') center center no-repeat RGBA(92, 92, 92, 1);
         }
+        @media (max-width: 450px) {
+          width: 180px;
+          .informationslist {
+            .pic {
+              width: 180px;
+              height: 110px;
+            }
+          }
+          .slick-prev {
+            left: -30px;
+          }
+          .slick-next {
+            right: -30px;
+          }
+        }
       }
       // 選項按鈕
       .options_btnblock {
@@ -957,14 +977,17 @@
       // flex: 0 0 auto;
       display: flex;
       margin: 0.5em 1em;
-
+      height: 60px;
       input,
       button {
         border-radius: 0;
         margin: 0;
+
+        height: 40px;
       }
       input {
         border-color: #fff;
+
         &.invalid {
           background-color: $linkColor;
           color: #fff;
@@ -980,6 +1003,7 @@
         width: 50px;
         background-color: #fff;
         border: 1px solid #fff;
+        margin-left: 5px;
       }
     }
   }

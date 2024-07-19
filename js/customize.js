@@ -279,6 +279,12 @@ $(function () {
   $('.chat_block .chat_group .close_btn>a').click(function () {
     $('.chat_group').hide();
   });
+
+  $('.chat_block')
+    .find('.message .enter')
+    .focusout(function () {
+      $('.chat_group').hide();
+    });
 });
 
 // tab功能

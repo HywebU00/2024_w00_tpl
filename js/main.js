@@ -658,11 +658,11 @@ $(function () {
       // $('a.goCenter').focus(); //加入這行
       e.preventDefault();
     });
-  $('.scrollToTop').keydown(function (e) {
-    $('html, body').stop().animate({ scrollTop: 0 }, 400, 'linear');
-    _body.find('a.goCenter').focus();
-    e.preventDefault();
-  });
+  // $('.scrollToTop').keydown(function (e) {
+  //   $('html, body').stop().animate({ scrollTop: 0 }, 400, 'linear');
+  //   _body.find('a.goCenter').focus();
+  //   e.preventDefault();
+  // });
   /*--------------------------------------------------------*/
   /////設定img 在IE9+ SAFARI FIREFOX CHROME 可以object-fit/////
   /*--------------------------------------------------------*/

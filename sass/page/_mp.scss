@@ -287,6 +287,10 @@
         }
       }
     }
+    // 點點
+    .slick-dots {
+      bottom: -20px;
+    }
     // 箭頭
     .slick-prev {
       left: -25px;
@@ -573,7 +577,8 @@
               opacity: 1;
             }
           }
-          @include screen('xs_mobile') {
+
+          @media (max-width: 630px) {
             flex-wrap: wrap;
             span {
               flex: 1 1 auto;

@@ -113,6 +113,9 @@ h2.title {
     position: relative;
     padding: 0.5em 0 0.5em 1.5em;
     border-bottom: solid 1px #eee;
+    @include screen('xs_mobile') {
+      display: block;
+    }
     &:before {
       content: '·';
       font-size: 2em;
@@ -135,6 +138,7 @@ h2.title {
         line-height: 1.5em;
         vertical-align: middle;
         color: #666;
+        word-break: break-all;
         a {
           color: #fff;
           display: inline-block;

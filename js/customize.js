@@ -37,6 +37,7 @@ $(function () {
       {
         breakpoint: 770,
         settings: {
+          dots: true,
           slidesToShow: 1,
         },
       },
@@ -258,6 +259,25 @@ $(function () {
 
   Fancybox.bind('[data-fancybox]', {
     // Custom options for all galleries
+  });
+
+  //  聊天機器人
+  $('.information_slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    // fade: true,
+    cssEase: 'linear',
+  });
+
+  // 諮詢服務
+  $('.chat_block .chat_group').hide();
+  $('.chat_block .chat_btn>a').click(function () {
+    $('.chat_group').show();
+    $('.information_slider').slick('refresh');
+  });
+  $('.chat_block .chat_group .close_btn>a').click(function () {
+    $('.chat_group').hide();
   });
 });
 

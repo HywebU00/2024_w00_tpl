@@ -231,6 +231,10 @@
   }
 }
 // 燈箱
+.fancybox__container {
+  z-index: 999999;
+  --fancybox-bg: rgba(24, 24, 27, 0.85);
+}
 .lightbox_block {
   width: 60vw;
   height: 80vh;
@@ -632,7 +636,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 99999;
+  z-index: 9999;
   height: 200px;
   .chat_btn {
     position: absolute;

@@ -52,6 +52,7 @@ $sitemapWidth: calc(100% / $sitemapLength);
       font-size: 1.25em;
       font-weight: bold;
       border-bottom: 2px solid $primaryColor;
+      text-decoration: none;
       &:hover,
       &:focus {
         color: $primaryColor !important;

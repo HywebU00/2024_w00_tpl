@@ -4,9 +4,10 @@
   color: $color-word;
 }
 
-@mixin aSetting($COLOR: $aColor, $NOLINE: none) {
+@mixin aSetting($COLOR: $aColor, $NOLINE: underline) {
   color: $COLOR;
   text-decoration: $NOLINE;
+  text-underline-offset: 6px;
   &:hover,
   &:focus {
     color: $aHover;
@@ -85,10 +86,12 @@ kbd {
         width: 32px;
         height: 32px;
         color: #333;
+        text-decoration: none;
         &:hover,
         &:focus {
           background: $aHover;
           color: #fff;
+          text-decoration: none;
         }
         &.active {
           // background: $aHover;

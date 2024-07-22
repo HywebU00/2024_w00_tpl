@@ -1576,7 +1576,8 @@ body {
 
 a {
   color: #0066cc;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 a:hover, a:focus {
   color: #004d99;
@@ -1638,10 +1639,12 @@ kbd kbd {
   width: 32px;
   height: 32px;
   color: #333;
+  text-decoration: none;
 }
 .font_size ul li a:hover, .font_size ul li a:focus {
   background: #004d99;
   color: #fff;
+  text-decoration: none;
 }
 .font_size ul li a.active {
   background: rgba(255, 255, 255, 0);
@@ -2896,7 +2899,8 @@ img.loaded {
 
 em[tooltip] {
   color: #0066cc;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 em[tooltip]:hover, em[tooltip]:focus {
   color: #004d99;
@@ -3087,6 +3091,7 @@ em[tooltip]:hover, em[tooltip]:focus {
   box-sizing: border-box;
   border-radius: 50px;
   transition: 0.5s;
+  text-decoration: none;
 }
 .category a:hover, .category a:focus {
   color: #fff;
@@ -7401,7 +7406,8 @@ table.table_sprite tr:nth-child(even) {
 .thumbnail a {
   display: block;
   color: #555;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
   position: relative;
 }
 .thumbnail a:hover, .thumbnail a:focus {
@@ -8415,6 +8421,7 @@ div.function ul li a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
   position: relative;
   transition: 0.5s;
+  text-decoration: none;
 }
 div.function ul li button:hover, div.function ul li button:focus,
 div.function ul li a:hover,
@@ -8768,6 +8775,9 @@ div.function ul li.icon_forward a:before {
   padding: 0 5px;
   color: #0066cc;
   text-decoration: none;
+}
+.pagination .total .items a:hover {
+  color: #cb4d06;
 }
 @media screen and (max-width: 575px) {
   .pagination .total {
@@ -9306,6 +9316,7 @@ body.noscroll {
   transition: 0.5s;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 .more a:before {
   content: "";
@@ -9852,6 +9863,7 @@ body.noscroll {
 }
 .topQuestions_block .questions_block .question_list .answer_content .solved_or_not ul li a.helpful {
   padding-left: 2em;
+  text-decoration: none;
 }
 .topQuestions_block .questions_block .question_list .answer_content .solved_or_not ul li a.helpful:before {
   content: "";
@@ -9867,6 +9879,7 @@ body.noscroll {
 }
 .topQuestions_block .questions_block .question_list .answer_content .solved_or_not ul li a.needassistance {
   padding-left: 2em;
+  text-decoration: none;
 }
 .topQuestions_block .questions_block .question_list .answer_content .solved_or_not ul li a.needassistance:before {
   content: "";
@@ -10463,6 +10476,7 @@ h2.title:before {
   font-size: 1.25em;
   font-weight: bold;
   border-bottom: 2px solid #15386e;
+  text-decoration: none;
 }
 .cascading li a:hover, .cascading li a:focus {
   color: #15386e !important;
@@ -10725,6 +10739,9 @@ h2.title:before {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+.questionanswer_block .answer_content p a:hover {
+  text-decoration: none;
+}
 .questionanswer_block .answer_content .file_download {
   margin: 0 0 1em;
 }
@@ -10782,6 +10799,7 @@ h2.title:before {
 }
 .questionanswer_block .answer_content .solved_or_not ul li a.helpful {
   padding-left: 2em;
+  text-decoration: none;
 }
 .questionanswer_block .answer_content .solved_or_not ul li a.helpful:before {
   content: "";
@@ -10797,6 +10815,7 @@ h2.title:before {
 }
 .questionanswer_block .answer_content .solved_or_not ul li a.needassistance {
   padding-left: 2em;
+  text-decoration: none;
 }
 .questionanswer_block .answer_content .solved_or_not ul li a.needassistance:before {
   content: "";
@@ -10996,6 +11015,9 @@ h2.title:before {
 }
 .questionSelection_blockin .question_selection_group .question_list a:hover {
   transform: scale(1.1);
+}
+.questionSelection_blockin .question_selection_group .slick-dots {
+  bottom: -10px;
 }
 .questionSelection_blockin .question_selection_group .slick-prev {
   left: -25px;
@@ -11317,6 +11339,7 @@ h2.title:before {
   border-radius: 10px 0 0 10px;
   letter-spacing: 0.05em;
   transition: 0.5s;
+  text-decoration: none;
 }
 .chat_block .chat_btn a:hover {
   margin-right: 0;

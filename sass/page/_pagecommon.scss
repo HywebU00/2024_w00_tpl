@@ -87,6 +87,9 @@
         padding-left: 3px;
         text-decoration: underline;
         text-underline-offset: 6px;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
     .file_download {
@@ -146,6 +149,7 @@
             position: relative;
             &.helpful {
               padding-left: 2em;
+              text-decoration: none;
 
               &:before {
                 content: '';
@@ -162,6 +166,7 @@
             }
             &.needassistance {
               padding-left: 2em;
+              text-decoration: none;
               &:before {
                 content: '';
                 background-image: url('../images/question_iconsad.svg');
@@ -349,6 +354,10 @@
           // }
         }
       }
+    }
+    // 點點
+    .slick-dots {
+      bottom: -10px;
     }
     // 箭頭
     .slick-prev {
@@ -659,6 +668,7 @@
       border-radius: 10px 0 0 10px;
       letter-spacing: 0.05em;
       transition: 0.5s;
+      text-decoration: none;
       &:hover {
         margin-right: 0;
         background-color: lighten($color: $primaryColor, $amount: 10);

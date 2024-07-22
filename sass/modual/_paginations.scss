@@ -68,6 +68,9 @@
         padding: 0 5px;
         color: $linkColor;
         text-decoration: none;
+        &:hover {
+          color: $color-orange;
+        }
       }
     }
     @include screen('xs_mobile') {

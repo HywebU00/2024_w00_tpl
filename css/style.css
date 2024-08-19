@@ -10737,7 +10737,7 @@ h2.title:before {
   flex-wrap: wrap;
 }
 .questionanswer_block .problemmessage .question_time {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   font-size: 1.125em;
   margin: 0 0 1em;
   padding-left: 1em;
@@ -10747,6 +10747,7 @@ h2.title:before {
   background-position: 0em 0.3em;
   background-repeat: no-repeat;
   background-size: 12px;
+  line-height: 1.5em;
 }
 .questionanswer_block .problemmessage .question_block {
   flex: 1 1 auto;
@@ -10754,7 +10755,7 @@ h2.title:before {
   font-size: 1.125em;
   color: #15386e;
   line-height: 1.8em;
-  padding-left: 1em;
+  padding-left: 0;
   margin-bottom: 0.5em;
 }
 .questionanswer_block .answer_content {

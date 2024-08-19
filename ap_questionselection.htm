@@ -33,12 +33,12 @@
           <!-- 新增div navlist -->
           <div class="navlist">
             <ul>
-              <li><a href="#">登出</a></li>
               <li><a href="#">回首頁</a></li>
               <li><a href="#">網站導覽</a></li>
               <li><a href="#">館藏查詢系統</a></li>
               <li><a href="#">電子資源整合系統</a></li>
               <li><a href="#">回臺北市立圖書館首頁</a></li>
+              <li><a href="#">登出</a></li>
             </ul>
           </div>
           <!-- font_size -->
@@ -125,6 +125,28 @@
                       <div class="form_grp">
                         <label for="mustSameAsId">進階查詢</label>
                         <div class="formContent">
+                          <!-- query_con_2_2_6_2 -->
+                          <div class="query_con_2_2_6_2">
+                            <div class="col"></div>
+                            <div class="col">
+                              <select name="pets" id="searchidname">
+                                <option value="">日期</option>
+                                <option value="">2024/01/01</option>
+                              </select>
+                            </div>
+                            <div class="col">
+                              <div class="form_content">
+                                <div class="datepick">
+                                  <input name="" type="date" value="" class="calendar" placeholder="開始日期" />
+                                </div>
+                                <div class="datepick">
+                                  <input name="" type="date" value="" class="calendar" placeholder="結束日期" />
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col">&nbsp;</div> -->
+                          </div>
+                          <!-- query_con_2_2_6_2 end -->
                           <!-- query_con_2_2_6_2 -->
                           <div class="query_con_2_2_6_2">
                             <div class="col"><span class="keywords_title">關鍵詞檢索</span></div>
@@ -311,8 +333,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -330,7 +352,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -338,7 +360,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -347,7 +369,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -356,7 +378,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -365,13 +387,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -380,7 +402,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -389,7 +411,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -398,7 +420,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -407,7 +429,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -473,8 +495,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -492,7 +514,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -500,7 +522,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -509,7 +531,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -518,7 +540,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -527,13 +549,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -542,7 +564,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -551,7 +573,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -560,7 +582,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -569,7 +591,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -635,8 +657,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -654,7 +676,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -662,7 +684,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -671,7 +693,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -680,7 +702,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -689,13 +711,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -704,7 +726,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -713,7 +735,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -722,7 +744,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -731,7 +753,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -797,8 +819,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -816,7 +838,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -824,7 +846,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -833,7 +855,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -842,7 +864,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -851,13 +873,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -866,7 +888,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -875,7 +897,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -884,7 +906,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -893,7 +915,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -959,8 +981,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -978,15 +1000,66 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
+                      <!-- 燈箱start -->
+                      <div class="lightbox_block" id="dialog-content">
+                        <!-- 問題解答 start -->
+                        <div class="questionanswer_block">
+                          <!-- 問題 start-->
+                          <div class="problemmessage">
+
+                            <div class="question_block">
+                              <p>
+                                1)昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。<br><br>
+                                2)貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項 於9/12新版上線即有，不是我要詢問
+                                9/26上架之「新書通報」(館藏系統頁面下方紅字)<br><br>
+                                3)綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝
+                                <br><br>ps.熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」
+                              </p>
+                            </div>
+                            <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
+                          </div>
+                          <!-- 問題 end-->
+                          <!-- 解答 start -->
+                          <div class="answer_content">
+                            <div class="answer_title">解答</div>
+                            <p>親愛的讀者您好：<br>
+                              抱歉誤解您的提問，日前上架之紅字「新書通報」資訊就等於之前系統的「新到圖書」資訊。<br>
+                              熱門問答內關於「查找新到圖書」內已更新說明可利用館藏查詢頁面下方的新書通報的列表，點入後可利用左方條件限縮查詢條件新書。謝謝。連結請<a href="#">按此</a>。<br><br>
+                              臺北市立圖書館諮詢服務課敬復
+                            </p>
+                            <div class="file_download">
+                              <h3>檔案下載</h3>
+                              <ul>
+                                <li>
+                                  <span class="file_name">檔案名稱</span>
+                                  <span class="file_pdf"><a href="xxxx.pdf">pdf</a>823.8 KB，下載 1,489 次</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="source">資料來源：維基百科：https://en.wikipedia.org/wiki/Printer%27s_key (檢索日期：113.3.23)</div>
+                            <div class="solved_or_not">
+                              <span>有回答到您的問題嗎？</span>
+                              <ul>
+                                <li><a href="javascript:;" class="helpful">有幫助</a></li>
+                                <li><a href="javascript:;" class="needassistance">需要協助</a></li>
+                              </ul>
+                              <div class="add1">+1</div>
+                            </div>
+                          </div>
+                          <!-- 解答 end -->
+                        </div>
+                        <!-- 問題解答 end -->
+                      </div>
+                      <!-- 燈箱end -->
                       <!-- 2 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -995,7 +1068,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1004,7 +1077,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1013,13 +1086,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1028,7 +1101,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1037,7 +1110,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1046,7 +1119,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1055,7 +1128,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -1121,8 +1194,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -1140,7 +1213,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -1148,7 +1221,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -1157,7 +1230,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1166,7 +1239,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1175,13 +1248,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1190,7 +1263,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1199,7 +1272,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1208,7 +1281,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1217,7 +1290,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -1283,8 +1356,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -1302,7 +1375,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -1310,7 +1383,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -1319,7 +1392,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1328,7 +1401,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1337,13 +1410,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1352,7 +1425,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1361,7 +1434,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1370,7 +1443,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1379,7 +1452,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -1445,8 +1518,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -1464,7 +1537,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -1472,7 +1545,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -1481,7 +1554,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1490,7 +1563,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1499,13 +1572,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1514,7 +1587,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1523,7 +1596,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1532,7 +1605,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1541,7 +1614,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -1607,8 +1680,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -1626,7 +1699,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -1634,7 +1707,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -1643,7 +1716,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1652,7 +1725,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1661,13 +1734,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1676,7 +1749,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1685,7 +1758,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1694,7 +1767,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1703,7 +1776,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>
@@ -1769,8 +1842,8 @@
                       <div class="arrangement_group">
                         <label for="selectSample">排序</label>
                         <select id="selectSample" name="">
-                          <option value="">熱門度-降冪</option>
-                          <option value="">熱門度-升冪</option>
+                          <option value="">點閱率-降冪</option>
+                          <option value="">點閱率-升冪</option>
                           <option value="">提問時間-降冪</option>
                           <option value="">提問時間-升冪</option>
                         </select>
@@ -1788,7 +1861,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="ap_readmore.htm">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 2 -->
                       <div class="questionResult_list">
@@ -1796,7 +1869,7 @@
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" 是「新書通報 "服務" 」喔，該項
                           於9/12新版上線即有，不是我要詢問
                         </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 3 -->
                       <div class="questionResult_list">
@@ -1805,7 +1878,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 4 -->
                       <div class="questionResult_list">
@@ -1814,7 +1887,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 5 -->
                       <div class="questionResult_list">
@@ -1823,13 +1896,13 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 6 -->
                       <div class="questionResult_list">
                         <div class="question_time">提問時間：2024/5/8 下午 01:09:06</div>
                         <div class="question_block">1）昨提問：9/26 上架之「新書通報」＝「新到圖書查詢」？貴館今回覆：新書通報為讀者訂閱後每月將發送email通知，與新到圖書查詢功能不同 。後者將盡快恢復服務。2）貴館回覆之 "新書通報為讀者訂閱後每月將發送email通知" </div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 7 -->
                       <div class="questionResult_list">
@@ -1838,7 +1911,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 8 -->
                       <div class="questionResult_list">
@@ -1847,7 +1920,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 9 -->
                       <div class="questionResult_list">
@@ -1856,7 +1929,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!-- 10 -->
                       <div class="questionResult_list">
@@ -1865,7 +1938,7 @@
                           於9/12新版上線即有，不是我要詢問
                           9/26上架之「新書通報」(館藏系統頁面下方紅字)3）綠底方形圖示之「新書通報服務」 VS 下方紅字之「新書通報」VS 尚未恢復之「新到圖書查詢」VS 熱門問答之如何「查找新到圖書」。四者是否易混淆？是否有因應之策？謝謝ps.
                           熱門問答之「如何查找新到圖書」，日前內文為「將於10月底前恢復新到圖書查詢」，近日更新為「館藏查詢系統，頁面下方會有新書通報的列表，可以點更多資料進入查看。若需要查看不同月份新書，可以點"新書月份"進行切換。」</div>
-                        <div class="more"><a href="javascript:;">閱讀全文</a></div>
+                        <div class="more"><a href="javascript:;" data-fancybox data-src="#dialog-content">查看答案</a></div>
                       </div>
                       <!--  -->
                     </div>

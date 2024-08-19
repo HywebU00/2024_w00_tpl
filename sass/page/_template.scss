@@ -61,7 +61,7 @@ body {
       color: $primaryColor;
       text-align: center;
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-size: 1.75em;
       font-weight: bold;
       position: relative;
@@ -76,7 +76,7 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -16px;
+        bottom: -12px;
         z-index: 1;
       }
       &:after {
@@ -87,7 +87,7 @@ body {
         position: absolute;
         left: auto;
         right: 0;
-        bottom: -16px;
+        bottom: -12px;
         z-index: 2;
       }
     }

@@ -15,7 +15,7 @@
 .questionResult_list_group {
   .questionResult_list {
     background-color: $lightColor;
-    padding: 2em 1.5em 1.5em;
+    padding: 1em;
     border-left: 2px solid $primaryColor;
     margin-bottom: 1.5em;
     .question_time {
@@ -28,14 +28,15 @@
       background-position: 0em 0.3em;
       background-repeat: no-repeat;
       background-size: 12px;
+      display: none;
     }
     .question_block {
       font-size: 1.125em;
       color: $primaryColor;
       line-height: 1.8em;
-      padding-left: 1em;
-      @include text-line(3, 1.8em);
-      margin-bottom: 1em;
+      padding-left: 0;
+      @include text-line(2, 1.8em);
+      margin-bottom: 0.5em;
     }
   }
 }
@@ -43,11 +44,14 @@
 .questionanswer_block {
   .problemmessage {
     background-color: $lightColor;
-    padding: 2em 1.5em 1.5em;
+    padding: 1em 1.5em;
     border-left: 2px solid $primaryColor;
-
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     .question_time {
-      font-size: 1.25em;
+      flex: 0 0 auto;
+      font-size: 1.125em;
       margin: 0 0 1em;
       padding-left: 1em;
       color: $primaryColor;
@@ -58,11 +62,13 @@
       background-size: 12px;
     }
     .question_block {
+      flex: 1 1 auto;
+      flex-basis: 100%;
       font-size: 1.125em;
       color: $primaryColor;
       line-height: 1.8em;
       padding-left: 1em;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
     }
   }
   .answer_content {
@@ -99,10 +105,10 @@
         font-size: 1.063rem;
         border-bottom: none;
         padding: 6px 10px;
-        border-radius: 5px;
+        // border-radius: 5px;
         margin: 0;
         background-color: #eee;
-        display: inline-block;
+        display: block;
       }
       ul {
         li {
@@ -115,7 +121,7 @@
       }
     }
     .source {
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
     }
     .solved_or_not {
       display: flex;
@@ -456,6 +462,11 @@
           margin-bottom: 1px;
         }
       }
+      @include screen('mobile') {
+        .tabBtn {
+          background-color: #007ab1;
+        }
+      }
       @media (max-width: 600px) {
         .tabBtn {
           flex: 1 1 auto;
@@ -644,34 +655,45 @@
 .chat_block {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   z-index: 9999;
-  height: 200px;
+  height: 184px;
+  @include screen('mobile') {
+    height: 234px;
+  }
   .chat_btn {
     position: absolute;
     right: 0;
     top: 0;
     a {
-      padding: 120px 10px 16px 10px;
+      padding: 95px 8px 16px 8px;
       background-image: url('../images/icon_service_man.svg');
       background-repeat: no-repeat;
       background-position: center 1em;
-      background-size: 90px;
+      background-size: 70px;
       display: flex;
-      width: 110px;
+      width: 90px;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: #fff;
-      font-size: 1.125em;
-      background-color: $primaryColor;
+      font-size: 1.063em;
+      background-color: darken($color: $primaryColor, $amount: 5);
       border-radius: 10px 0 0 10px;
       letter-spacing: 0.05em;
       transition: 0.5s;
       text-decoration: none;
       &:hover {
         margin-right: 0;
-        background-color: lighten($color: $primaryColor, $amount: 10);
+        background-color: lighten($color: $primaryColor, $amount: 20);
+      }
+    }
+    @include screen('mobile') {
+      a {
+        padding: 55px 10px 16px 10px;
+        background-size: 30px;
+        width: 50px;
+        line-height: 1.3em;
       }
     }
   }
@@ -1015,6 +1037,26 @@
         border: 1px solid #fff;
         margin-left: 5px;
       }
+    }
+  }
+}
+.noinformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  span {
+    font-size: 1.5rem;
+    margin-left: 2em;
+  }
+  @include screen('tablet') {
+    flex-wrap: wrap;
+    span {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+      margin: 1em 0 2em 0;
+      text-align: center;
     }
   }
 }

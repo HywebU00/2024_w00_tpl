@@ -1,6 +1,6 @@
 // .tabSet {
 .tabSet {
-  margin: 30px auto;
+  margin: 30px auto 0px;
   .tabItems {
     display: flex;
     background: rgba(255, 255, 255, 0.6);
@@ -37,7 +37,7 @@
   .tabContent {
     display: none;
     position: relative;
-    padding: 10px 1px;
+    padding: 5px 1px;
     // border: #bbb 1px solid;
 
     @include screen('mobile') {

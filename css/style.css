@@ -3166,7 +3166,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   text-decoration: none;
   position: fixed;
   bottom: 220px;
-  right: 30px;
+  right: 20px;
   transition: 0.3s ease-out;
   display: none;
   z-index: 999;
@@ -3175,6 +3175,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .scrollToTop:hover, .scrollToTop:focus {
   background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.8);
   box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .scrollToTop {
+    bottom: 280px;
+    right: 0;
+  }
 }
 
 .header {
@@ -3298,7 +3304,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 @media (max-width: 1200px) {
   .header h1 {
-    top: 2.5em;
+    top: 2em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -3666,9 +3672,9 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .menu > ul > li > a {
   display: block;
   padding: 0 0.5em;
-  min-height: 2.5em;
+  min-height: 2.3em;
   font-weight: bold;
-  line-height: 2.5em;
+  line-height: 2.3em;
   white-space: nowrap;
   color: #4b4949;
   text-align: center;
@@ -7316,7 +7322,7 @@ table.table_sprite tr:nth-child(even) {
 }
 
 .tabSet {
-  margin: 30px auto;
+  margin: 30px auto 0px;
 }
 .tabSet .tabItems {
   display: flex;
@@ -7347,7 +7353,7 @@ table.table_sprite tr:nth-child(even) {
 .tabSet .tabContent {
   display: none;
   position: relative;
-  padding: 10px 1px;
+  padding: 5px 1px;
 }
 @media screen and (max-width: 767px) {
   .tabSet .tabContent {
@@ -9113,7 +9119,7 @@ body.noscroll {
   color: #15386e;
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 1.75em;
   font-weight: bold;
   position: relative;
@@ -9128,7 +9134,7 @@ body.noscroll {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -16px;
+  bottom: -12px;
   z-index: 1;
 }
 .main h2.mptitle:after {
@@ -9139,7 +9145,7 @@ body.noscroll {
   position: absolute;
   left: auto;
   right: 0;
-  bottom: -16px;
+  bottom: -12px;
   z-index: 2;
 }
 
@@ -9359,7 +9365,8 @@ body.noscroll {
   justify-content: flex-end;
   background-image: url("../images/mpimg.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left bottom -7em;
+  min-height: 530px;
 }
 .mpimgBlock .container:after {
   content: "";
@@ -9374,18 +9381,22 @@ body.noscroll {
   background: linear-gradient(270deg, rgb(111, 205, 248) 0%, rgba(152, 217, 245, 0.8) 50%, rgba(189, 228, 243, 0.85) 100%);
   z-index: 2;
 }
-.mpimgBlock .container:before {
-  content: "";
-  background: url("../images/mp_en.png") no-repeat center bottom;
-  background-size: 80% auto;
-  width: 88%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
+@media (max-width: 1200px) {
+  .mpimgBlock .container {
+    background-position: left bottom -7em;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mpimgBlock .container {
+    background-position: left bottom 0;
+    min-height: 520px;
+  }
 }
 @media screen and (max-width: 767px) {
+  .mpimgBlock .container {
+    background-position: left -310px bottom 0;
+    min-height: 480px;
+  }
   .mpimgBlock .container:after {
     width: 100%;
   }
@@ -9393,23 +9404,30 @@ body.noscroll {
 
 .searchBlock {
   width: 65%;
-  margin: 12em 3.5em 5em 0;
+  margin: 10em 3.5em 0em 0;
   position: relative;
   z-index: 9;
   text-align: center;
 }
 @media screen and (max-width: 991px) {
   .searchBlock {
-    margin: 6em 3.5em 5em 0;
+    margin: 6em 3.5em 0em 0;
   }
 }
 @media screen and (max-width: 767px) {
   .searchBlock {
-    margin: 2em 3.5em 3em 0;
+    margin: 2em 3.5em 0em 0;
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .searchBlock {
+    margin: 2em 2em 0em 0;
+    width: 70%;
   }
 }
 .searchBlock h2.mptitle {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .searchBlock h2.mptitle:before {
   background-color: #15386e;
@@ -9421,55 +9439,73 @@ body.noscroll {
   position: relative;
   z-index: 5;
 }
-
-.innerpage .mpimgBlock .container {
-  background-position: left bottom -4em;
-  min-height: 550px;
-}
-@media screen and (max-width: 991px) {
-  .innerpage .mpimgBlock .container {
-    background-position: left bottom 0;
-    min-height: 500px;
+@media screen and (max-width: 767px) {
+  .searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 {
+    flex-flow: row wrap;
   }
 }
+.searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 .col {
+  flex: 0 0 9em;
+  box-sizing: border-box;
+  margin: 0.2em 0;
+}
+.searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 .col:nth-child(3) {
+  flex: 1 1 auto;
+}
+.searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 .col:nth-child(4) {
+  flex: 0 0 54px;
+}
 @media screen and (max-width: 767px) {
-  .innerpage .mpimgBlock .container {
-    min-height: 430px;
+  .searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 .col {
+    flex: 1 1 auto;
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 575px) {
-  .innerpage .mpimgBlock .container {
-    min-height: 410px;
+  .searchBlock .tabSet .tabContentGroup .tabContent .query_con_2_2_6_2 .col label {
+    display: inline-block;
   }
 }
-.innerpage .mpimgBlock .container:before {
-  content: "";
-  width: 100%;
-  height: 170px;
+.searchBlock .tabSet .form_content {
+  display: flex;
+  justify-content: space-between;
+}
+.searchBlock .tabSet .form_content .datepick {
+  position: relative;
+  flex: 0 0 48%;
+}
+.searchBlock .tabSet .form_content .datepick + .datepick {
+  margin-left: 1em;
+  margin-right: 0;
+  padding-right: 0;
+}
+.searchBlock .tabSet .form_content .datepick + .datepick:before {
+  content: "~";
+  font-size: 1.5em;
+  color: #777;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #f9f8f8;
-  z-index: 1;
-  background-image: none;
+  left: -0.8em;
+  top: 0.5em;
+}
+@media (max-width: 1200px) {
+  .searchBlock .tabSet .form_content .datepick + .datepick:before {
+    left: -0.6em;
+  }
 }
 @media screen and (max-width: 991px) {
-  .innerpage .mpimgBlock .container:before {
+  .searchBlock .tabSet .form_content {
+    flex-wrap: wrap;
+  }
+  .searchBlock .tabSet .form_content .datepick {
+    flex: 1 1 100%;
+    margin-bottom: 0.4em;
+  }
+  .searchBlock .tabSet .form_content .datepick + .datepick {
+    margin-left: 0em;
+    margin-bottom: 0;
+  }
+  .searchBlock .tabSet .form_content .datepick + .datepick:before {
     display: none;
-  }
-}
-.innerpage .searchBlock {
-  margin: 12em 3.5em 0 0;
-}
-@media screen and (max-width: 991px) {
-  .innerpage .searchBlock {
-    margin: 6em 3.5em 0 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .innerpage .searchBlock {
-    margin: 2em 3.5em 0 0;
   }
 }
 
@@ -9480,7 +9516,7 @@ body.noscroll {
   background-image: url("../images/mpbg02.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 4em;
+  padding-top: 3em;
   padding-bottom: 4em;
 }
 .questionSelection_block .question_selection_group {
@@ -10660,7 +10696,7 @@ h2.title:before {
 
 .questionResult_list_group .questionResult_list {
   background-color: #e7eff4;
-  padding: 2em 1.5em 1.5em;
+  padding: 1em;
   border-left: 2px solid #15386e;
   margin-bottom: 1.5em;
 }
@@ -10674,30 +10710,35 @@ h2.title:before {
   background-position: 0em 0.3em;
   background-repeat: no-repeat;
   background-size: 12px;
+  display: none;
 }
 .questionResult_list_group .questionResult_list .question_block {
   font-size: 1.125em;
   color: #15386e;
   line-height: 1.8em;
-  padding-left: 1em;
+  padding-left: 0;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   line-height: 1.8em;
-  height: calc(1.8em * 3);
-  margin-bottom: 1em;
+  height: calc(1.8em * 2);
+  margin-bottom: 0.5em;
 }
 
 .questionanswer_block .problemmessage {
   background-color: #e7eff4;
-  padding: 2em 1.5em 1.5em;
+  padding: 1em 1.5em;
   border-left: 2px solid #15386e;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .questionanswer_block .problemmessage .question_time {
-  font-size: 1.25em;
+  flex: 0 0 auto;
+  font-size: 1.125em;
   margin: 0 0 1em;
   padding-left: 1em;
   color: #15386e;
@@ -10708,11 +10749,13 @@ h2.title:before {
   background-size: 12px;
 }
 .questionanswer_block .problemmessage .question_block {
+  flex: 1 1 auto;
+  flex-basis: 100%;
   font-size: 1.125em;
   color: #15386e;
   line-height: 1.8em;
   padding-left: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .questionanswer_block .answer_content {
   padding-bottom: 1em;
@@ -10749,10 +10792,9 @@ h2.title:before {
   font-size: 1.063rem;
   border-bottom: none;
   padding: 6px 10px;
-  border-radius: 5px;
   margin: 0;
   background-color: #eee;
-  display: inline-block;
+  display: block;
 }
 .questionanswer_block .answer_content .file_download ul li {
   padding: 0.3em 0 0.3em 1.5em;
@@ -10762,7 +10804,7 @@ h2.title:before {
   top: 0.3em;
 }
 .questionanswer_block .answer_content .source {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .questionanswer_block .answer_content .solved_or_not {
   display: flex;
@@ -11129,6 +11171,11 @@ h2.title:before {
     margin-bottom: 1px;
   }
 }
+@media screen and (max-width: 767px) {
+  .problem_integration_block .tabSet .tabItems .tabBtn {
+    background-color: #007ab1;
+  }
+}
 @media (max-width: 600px) {
   .problem_integration_block .tabSet .tabItems .tabBtn {
     flex: 1 1 auto;
@@ -11313,9 +11360,14 @@ h2.title:before {
 .chat_block {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 0px;
   z-index: 9999;
-  height: 200px;
+  height: 184px;
+}
+@media screen and (max-width: 767px) {
+  .chat_block {
+    height: 234px;
+  }
 }
 .chat_block .chat_btn {
   position: absolute;
@@ -11323,19 +11375,19 @@ h2.title:before {
   top: 0;
 }
 .chat_block .chat_btn a {
-  padding: 120px 10px 16px 10px;
+  padding: 95px 8px 16px 8px;
   background-image: url("../images/icon_service_man.svg");
   background-repeat: no-repeat;
   background-position: center 1em;
-  background-size: 90px;
+  background-size: 70px;
   display: flex;
-  width: 110px;
+  width: 90px;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  font-size: 1.125em;
-  background-color: #15386e;
+  font-size: 1.063em;
+  background-color: #112d59;
   border-radius: 10px 0 0 10px;
   letter-spacing: 0.05em;
   transition: 0.5s;
@@ -11343,7 +11395,15 @@ h2.title:before {
 }
 .chat_block .chat_btn a:hover {
   margin-right: 0;
-  background-color: #1d4e99;
+  background-color: #2564c4;
+}
+@media screen and (max-width: 767px) {
+  .chat_block .chat_btn a {
+    padding: 55px 10px 16px 10px;
+    background-size: 30px;
+    width: 50px;
+    line-height: 1.3em;
+  }
 }
 .chat_block .chat_group {
   position: absolute;
@@ -11669,6 +11729,28 @@ h2.title:before {
   background-color: #fff;
   border: 1px solid #fff;
   margin-left: 5px;
+}
+
+.noinformation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.noinformation span {
+  font-size: 1.5rem;
+  margin-left: 2em;
+}
+@media screen and (max-width: 991px) {
+  .noinformation {
+    flex-wrap: wrap;
+  }
+  .noinformation span {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    margin: 1em 0 2em 0;
+    text-align: center;
+  }
 }
 
 .main.large_size .questionSelection_block .question_selection_group .question_list a .images .content .title {

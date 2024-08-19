@@ -10,7 +10,7 @@
   text-decoration: none;
   position: fixed;
   bottom: 220px;
-  right: 30px;
+  right: 20px;
   transition: 0.3s ease-out;
   display: none;
   z-index: 999;
@@ -19,6 +19,10 @@
   &:focus {
     background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.8);
     box-shadow: none;
+  }
+  @include screen('mobile') {
+    bottom: 280px;
+    right: 0;
   }
 }
 //元素對齊 align

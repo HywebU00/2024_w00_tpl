@@ -60,7 +60,9 @@
     justify-content: flex-end;
     background-image: url('../images/mpimg.jpg');
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: left bottom -7em;
+    min-height: 530px;
+    // transition: 0.5s;
 
     &:after {
       content: '';
@@ -74,18 +76,16 @@
       background: linear-gradient(270deg, rgba(111, 205, 248, 1) 0%, rgba(152, 217, 245, 0.8) 50%, rgba(189, 228, 243, 0.85) 100%);
       z-index: 2;
     }
-    &:before {
-      content: '';
-      background: url('../images/mp_en.png') no-repeat center bottom;
-      background-size: 80% auto;
-      width: 88%;
-      height: 100px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
+    @media (max-width: 1200px) {
+      background-position: left bottom -7em;
+    }
+    @include screen('tablet') {
+      background-position: left bottom 0;
+      min-height: 520px;
     }
     @include screen('mobile') {
+      background-position: left -310px bottom 0;
+      min-height: 480px;
       &:after {
         width: 100%;
       }
@@ -94,18 +94,23 @@
 }
 .searchBlock {
   width: 65%;
-  margin: 12em 3.5em 5em 0;
+  margin: 10em 3.5em 0em 0;
   position: relative;
   z-index: 9;
   text-align: center;
   @include screen('tablet') {
-    margin: 6em 3.5em 5em 0;
+    margin: 6em 3.5em 0em 0;
   }
   @include screen('mobile') {
-    margin: 2em 3.5em 3em 0;
+    margin: 2em 3.5em 0em 0;
+    width: 70%;
+  }
+  @media (max-width: 480px) {
+    margin: 2em 2em 0em 0;
+    width: 70%;
   }
   h2.mptitle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     &:before {
       background-color: $primaryColor;
     }
@@ -116,52 +121,84 @@
   .tabSet {
     position: relative;
     z-index: 5;
-  }
-}
-//
-// 內頁 mpimgBlock
-.innerpage {
-  .mpimgBlock {
-    .container {
-      background-position: left bottom -4em;
-      min-height: 550px;
+    .tabContentGroup {
+      .tabContent {
+        .query_con_2_2_6_2 {
+          @include screen('mobile') {
+            flex-flow: row wrap;
+          }
+          .col {
+            flex: 0 0 9em;
+            box-sizing: border-box;
+            margin: 0.2em 0;
+
+            &:nth-child(3) {
+              flex: 1 1 auto;
+            }
+            &:nth-child(4) {
+              flex: 0 0 54px;
+            }
+            @include screen('mobile') {
+              flex: 1 1 auto;
+              flex-basis: 100%;
+            }
+            @include screen('xs_mobile') {
+              label {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .form_content {
+      display: flex;
+      justify-content: space-between;
+      .datepick {
+        position: relative;
+        flex: 0 0 48%;
+        & + .datepick {
+          margin-left: 1em;
+          margin-right: 0;
+          padding-right: 0;
+          &:before {
+            content: '~';
+            font-size: 1.5em;
+            color: #777;
+            position: absolute;
+            left: -0.8em;
+            top: 0.5em;
+          }
+        }
+      }
+      @media (max-width: 1200px) {
+        .datepick {
+          & + .datepick {
+            &:before {
+              left: -0.6em;
+            }
+          }
+        }
+      }
       @include screen('tablet') {
-        background-position: left bottom 0;
-        min-height: 500px;
-      }
-      @include screen('mobile') {
-        min-height: 430px;
-      }
-      @include screen('xs_mobile') {
-        min-height: 410px;
-      }
-      &:before {
-        content: '';
-        width: 100%;
-        height: 170px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #f9f8f8;
-        z-index: 1;
-        background-image: none;
-        @include screen('tablet') {
-          display: none;
+        flex-wrap: wrap;
+        .datepick {
+          flex: 1 1 100%;
+          margin-bottom: 0.4em;
+          & + .datepick {
+            margin-left: 0em;
+            margin-bottom: 0;
+            &:before {
+              display: none;
+            }
+          }
         }
       }
     }
   }
-  .searchBlock {
-    margin: 12em 3.5em 0 0;
-    @include screen('tablet') {
-      margin: 6em 3.5em 0 0;
-    }
-    @include screen('mobile') {
-      margin: 2em 3.5em 0 0;
-    }
-  }
 }
+
 // 問題選粹
 .questionSelection_block {
   text-align: center;
@@ -169,7 +206,7 @@
     background-image: url('../images/mpbg02.png');
     background-repeat: no-repeat;
     background-position: center top;
-    padding-top: 4em;
+    padding-top: 3em;
     padding-bottom: 4em;
   }
   .question_selection_group {

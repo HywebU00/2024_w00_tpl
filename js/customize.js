@@ -302,13 +302,19 @@ tabFunction({
   index: 0, // 預設開啟第幾個
 });
 
-//
+// 愛書亞按鈕
 $(function () {
-  $(window).resize(function () {
+  function chatblockbtn() {
     if ($(window).outerWidth() < 767) {
       $('.chat_btn').children('a').html('請問我');
     } else {
       $('.chat_btn').children('a').html('有問題找<br>愛書亞');
     }
+  }
+  // 初始化時檢查一次
+  chatblockbtn();
+  // 當視窗大小改變時檢查
+  $(window).resize(function () {
+    chatblockbtn();
   });
 });

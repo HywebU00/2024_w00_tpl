@@ -21,7 +21,7 @@
     box-shadow: none;
   }
   @include screen('mobile') {
-    bottom: 280px;
+    bottom: 200px;
     right: 0;
   }
 }

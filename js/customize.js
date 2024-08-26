@@ -285,6 +285,10 @@ $(function () {
     .focusout(function () {
       $('.chat_group').hide();
     });
+
+  //
+
+  //
 });
 
 // tab功能
@@ -296,4 +300,15 @@ tabFunction({
   modeSwitch: false, // 預設模式自動切換，尺寸以上tab功能，尺寸以下手風琴功能
   width: 767, // 尺寸以上tab功能，尺寸以下手風琴功能
   index: 0, // 預設開啟第幾個
+});
+
+//
+$(function () {
+  $(window).resize(function () {
+    if ($(window).outerWidth() < 767) {
+      $('.chat_btn').children('a').html('請問我');
+    } else {
+      $('.chat_btn').children('a').html('有問題找<br>愛書亞');
+    }
+  });
 });

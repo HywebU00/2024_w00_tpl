@@ -3178,7 +3178,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 @media screen and (max-width: 767px) {
   .scrollToTop {
-    bottom: 280px;
+    bottom: 200px;
     right: 0;
   }
 }
@@ -11367,7 +11367,7 @@ h2.title:before {
 }
 @media screen and (max-width: 767px) {
   .chat_block {
-    height: 234px;
+    height: 160px;
   }
 }
 .chat_block .chat_btn {

@@ -660,7 +660,7 @@
   z-index: 9999;
   height: 184px;
   @include screen('mobile') {
-    height: 234px;
+    height: 160px;
   }
   .chat_btn {
     position: absolute;

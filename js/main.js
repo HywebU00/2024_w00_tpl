@@ -1299,12 +1299,3 @@ if ($('[data-fancybox="gallery"]').length > 0) {
     l10n: Fancybox.l10n.zh_TW,
   });
 }
-// $(function () {
-//   _window.resize(function () {
-//     if (ww < wwSmall) {
-//       $('.chat_block').children('.chat_btn > a').text('請問我');
-//     } else {
-//       $('.chat_block').children('.chat_btn > a').text('有問題找<br>愛書亞我');
-//     }
-//   });
-// });

@@ -23,6 +23,8 @@ body {
   width: 100%;
   margin: 0px auto;
   background-color: #f9f8f8;
+  position: relative;
+
   @include screen('mobile') {
     padding-top: 60px;
     background: #fff;
@@ -76,7 +78,7 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -12px;
+        bottom: -8px;
         z-index: 1;
       }
       &:after {
@@ -87,7 +89,7 @@ body {
         position: absolute;
         left: auto;
         right: 0;
-        bottom: -12px;
+        bottom: -8px;
         z-index: 2;
       }
     }
@@ -139,8 +141,31 @@ body {
   }
   &.nosearch {
     position: relative;
-
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 117px;
+      background-color: #f9f8f8;
+      z-index: 1;
+      @media (max-width: 1200px) {
+        height: 135px;
+      }
+      @include screen('tablet') {
+        height: 0px;
+      }
+    }
     > .container {
+    }
+    .mpimgBlock {
+      .container {
+        background-position: left bottom -5em;
+        @include screen('mobile') {
+          background-position: left -310px bottom 0;
+        }
+      }
     }
     .center_block {
       position: relative;

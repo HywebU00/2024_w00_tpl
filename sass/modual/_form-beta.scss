@@ -220,12 +220,13 @@ select::-ms-expand {
 
 // 表單必填
 .necessary {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   color: $color-red;
-  padding: 1px 6px;
-  border-radius: 2px;
-  margin: 0 6px 0 0;
-  box-shadow: 0 0 0 1px $color-red inset;
+  // padding: 1px 6px;
+  // border-radius: 2px;
+  margin: 0 0 0 6px;
+  vertical-align: middle;
+  // box-shadow: 0 0 0 1px $color-red inset;
 }
 
 .form_grid {

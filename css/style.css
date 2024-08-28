@@ -2119,7 +2119,7 @@ kbd kbd {
   border-bottom: 1px solid #eee;
   padding: 0em 0em 0.5em 2em;
   font-size: 1.125em;
-  margin: 2em 0 1em;
+  margin: 1em 0 0.5em;
   background-image: url("../images/breadcrumb_icon.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -3286,7 +3286,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .header h1 {
   position: absolute;
-  top: 1.5em;
+  top: 0.8em;
   left: 0em;
   width: 20%;
   height: 75px;
@@ -3304,7 +3304,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 @media (max-width: 1200px) {
   .header h1 {
-    top: 2em;
+    top: 1.7em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -3327,7 +3327,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   }
 }
 .header .navigation {
-  margin: 1.5em 0 0;
+  margin: 0.8em 0 0;
   box-sizing: border-box;
   display: flex;
 }
@@ -3451,9 +3451,30 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .search .keywordHot {
   flex: 1 1 100%;
-  margin: 1em 0;
+  margin: 1em 0 0.5em;
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .search .keywordHot {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .search .keywordHot {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+}
+.search .keywordHot span {
+  flex: 0 0 auto;
+  min-width: 5em;
+  text-align: left;
+  font-size: 1.25em;
+  margin-right: 0.5em;
+  padding: 0.5em 0;
 }
 .search .keywordHot ul {
+  flex: 1 1 auto;
   font-size: 1.125em;
   line-height: 1.65em;
   margin: 0;
@@ -3463,14 +3484,9 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   justify-content: flex-start;
   list-style-type: none;
 }
-.search .keywordHot ul:before {
-  content: "熱門關鍵詞";
-  padding: 0.5em;
-  min-width: 5em;
-}
 .search .keywordHot ul li {
-  margin: 0.3em 0;
-  padding: 0.2em;
+  margin: 0.3em 0.1em 0.8em;
+  padding: 0;
   flex: 0 0 auto;
 }
 .search .keywordHot ul a {
@@ -3484,28 +3500,17 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #004d99;
   cursor: pointer;
 }
-@media screen and (max-width: 991px) {
-  .search .keywordHot ul:before {
-    width: 100%;
+@media screen and (max-width: 575px) {
+  .search .keywordHot span {
+    flex-basis: 100%;
   }
-}
-@media screen and (max-width: 767px) {
-  .search .keywordHot ul ul {
-    font-size: 1em;
-    line-height: 1.25em;
-  }
-  .search .keywordHot ul li {
-    margin: 0.2em 0;
-    padding: 0.1em;
-    flex: 0 0 auto;
-  }
-  .search .keywordHot ul a {
-    padding: 0.3em 1em;
+  .search .keywordHot ul {
+    flex-basis: 100%;
   }
 }
 .search .btngrp {
   text-align: center;
-  padding: 0.6em 0;
+  padding: 0.3em 0 1em;
 }
 
 .m_search {
@@ -3609,7 +3614,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   z-index: 99;
   right: 3em;
-  top: 4.5em;
+  top: 3.5em;
   clear: both;
   isolation: isolate;
   width: 68%;
@@ -5118,12 +5123,10 @@ select::-ms-expand {
 }
 
 .necessary {
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   color: #d30000;
-  padding: 1px 6px;
-  border-radius: 2px;
-  margin: 0 6px 0 0;
-  box-shadow: 0 0 0 1px #d30000 inset;
+  margin: 0 0 0 6px;
+  vertical-align: middle;
 }
 
 .flex-form {
@@ -7322,7 +7325,7 @@ table.table_sprite tr:nth-child(even) {
 }
 
 .tabSet {
-  margin: 30px auto 0px;
+  margin: 20px auto 0px;
 }
 .tabSet .tabItems {
   display: flex;
@@ -7353,7 +7356,7 @@ table.table_sprite tr:nth-child(even) {
 .tabSet .tabContent {
   display: none;
   position: relative;
-  padding: 5px 1px;
+  padding: 0px 1px;
 }
 @media screen and (max-width: 767px) {
   .tabSet .tabContent {
@@ -9077,6 +9080,7 @@ body.noscroll {
   width: 100%;
   margin: 0px auto;
   background-color: #f9f8f8;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .wrapper {
@@ -9134,7 +9138,7 @@ body.noscroll {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -12px;
+  bottom: -8px;
   z-index: 1;
 }
 .main h2.mptitle:after {
@@ -9145,7 +9149,7 @@ body.noscroll {
   position: absolute;
   left: auto;
   right: 0;
-  bottom: -12px;
+  bottom: -8px;
   z-index: 2;
 }
 
@@ -9209,6 +9213,34 @@ body.noscroll {
 }
 .innerpage.nosearch {
   position: relative;
+}
+.innerpage.nosearch:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 117px;
+  background-color: #f9f8f8;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  .innerpage.nosearch:before {
+    height: 135px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .innerpage.nosearch:before {
+    height: 0px;
+  }
+}
+.innerpage.nosearch .mpimgBlock .container {
+  background-position: left bottom -5em;
+}
+@media screen and (max-width: 767px) {
+  .innerpage.nosearch .mpimgBlock .container {
+    background-position: left -310px bottom 0;
+  }
 }
 .innerpage.nosearch .center_block {
   position: relative;
@@ -9365,17 +9397,17 @@ body.noscroll {
   justify-content: flex-end;
   background-image: url("../images/mpimg.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom -7em;
-  min-height: 530px;
+  background-position: left bottom -8em;
+  min-height: 475px;
 }
 .mpimgBlock .container:after {
   content: "";
-  -webkit-clip-path: polygon(18.6% 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(18.6% 0, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(14.6% 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(14.6% 0, 100% 0%, 100% 100%, 0% 100%);
   position: absolute;
   top: 0;
   right: 0;
-  width: 88%;
+  width: 85%;
   height: 100%;
   background: rgb(111, 205, 248);
   background: linear-gradient(270deg, rgb(111, 205, 248) 0%, rgba(152, 217, 245, 0.8) 50%, rgba(189, 228, 243, 0.85) 100%);
@@ -9383,19 +9415,19 @@ body.noscroll {
 }
 @media (max-width: 1200px) {
   .mpimgBlock .container {
-    background-position: left bottom -7em;
+    background-position: left bottom -9em;
   }
 }
 @media screen and (max-width: 991px) {
   .mpimgBlock .container {
-    background-position: left bottom 0;
-    min-height: 520px;
+    background-position: left bottom -5em;
+    min-height: 425px;
   }
 }
 @media screen and (max-width: 767px) {
   .mpimgBlock .container {
     background-position: left -310px bottom 0;
-    min-height: 480px;
+    min-height: 410px;
   }
   .mpimgBlock .container:after {
     width: 100%;
@@ -9404,26 +9436,27 @@ body.noscroll {
 
 .searchBlock {
   width: 65%;
-  margin: 10em 3.5em 0em 0;
+  margin: 8.5em 3.5em 0em 0;
   position: relative;
   z-index: 9;
   text-align: center;
 }
 @media screen and (max-width: 991px) {
   .searchBlock {
-    margin: 6em 3.5em 0em 0;
+    margin: 5.5em 3em 0em 0;
+    width: 66%;
   }
 }
 @media screen and (max-width: 767px) {
   .searchBlock {
-    margin: 2em 3.5em 0em 0;
-    width: 70%;
+    margin: 2em 3em 0em 0;
+    width: 75%;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .searchBlock {
     margin: 2em 2em 0em 0;
-    width: 70%;
+    width: 75%;
   }
 }
 .searchBlock h2.mptitle {
@@ -9516,8 +9549,8 @@ body.noscroll {
   background-image: url("../images/mpbg02.png");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 3em;
-  padding-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .questionSelection_block .question_selection_group {
   margin: 0 110px 0;
@@ -9577,7 +9610,7 @@ body.noscroll {
 .questionSelection_block .question_selection_group .question_list a .images {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 220px;
   overflow: hidden;
   border-radius: 20px;
   padding: 0;
@@ -10681,7 +10714,7 @@ h2.title:before {
 }
 
 .ap {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .number_searches {
@@ -10959,7 +10992,7 @@ h2.title:before {
 
 .questionSelection_blockin {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .questionSelection_blockin .question_selection_group {
   margin: 0 50px 0;
@@ -10971,7 +11004,7 @@ h2.title:before {
 }
 .questionSelection_blockin .question_selection_group .question_list {
   text-align: center;
-  padding: 20px 0px 40px;
+  padding: 15px 0px 40px;
 }
 .questionSelection_blockin .question_selection_group .question_list a {
   display: block;
@@ -10999,7 +11032,7 @@ h2.title:before {
 .questionSelection_blockin .question_selection_group .question_list a .images {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 220px;
   overflow: hidden;
   border-radius: 20px;
   padding: 0;
@@ -11237,7 +11270,7 @@ h2.title:before {
   line-height: 1.8em;
   padding-bottom: 1em;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .memberlogin_block {
@@ -11339,6 +11372,19 @@ h2.title:before {
   }
 }
 
+.ask_question_block .required_description {
+  font-size: 1.125em;
+  padding: 0.5em 1em 0.3em 0.5em;
+  border: 1px solid #ddd;
+  display: inline-block;
+}
+.ask_question_block .required_description span {
+  font-size: 1.5rem;
+  color: #d30000;
+  margin: 0 0 0 6px;
+  vertical-align: middle;
+  font-weight: bold;
+}
 .ask_question_block .flex-form input[type=text] {
   border-radius: 50px;
   padding: 0.5em 1em;
